@@ -13,7 +13,8 @@ Curves are sequentially drawn on a white board. The curves has transparency and 
 Settings are defined in `settings.py`:
 - `CURVE_COUNT_PER_10x10`   -   number of curves per block 10x10
 - `MAX_ENDPIXEL_DEVIATION`  -   deviation of bezie curve points relative to each other
-- `MAX_WIDTH_DEVIATION`     -   deviation in width of curve in [Drawing](README.md/#drawing) stage
+- `MAX_WIDTH_DEVIATION`     -   deviation in width of curve in [Drawing](README.md/#drawing) 
+- `BASE_WIDTH`              -   base stable width of curve
 - `THREADS_COUNT`           -   number of threads in [Collecting](README.md/#collecting) stage
 
 Suggestion: If you change `MAX_ENDPIXEL_DEVIATION` with some multiple `k` (for example, from `0.04` to `0.02` with multiple `1/2`), change the `CURVE_COUNT_PER_10x10` by about `1/k` (in stated example, from `7` to `14`), because otherwhise some artifacts may appear.

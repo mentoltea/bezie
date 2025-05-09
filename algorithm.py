@@ -133,7 +133,7 @@ def alg(original: Image.Image) -> Image.Image:
     for (crv, clr) in curves:
         if (n%1000==0):
             print(f"DRAWING: {n}/{CURVE_COUNT}")
-        draw_curve(modified, draw, crv, clr, 1+int(round(random.random()*MAX_WIDTH_DEVIATION)))
+        draw_curve(modified, draw, crv, clr, BASE_WIDTH+int(round(random.random()*MAX_WIDTH_DEVIATION)))
         n+=1
     
     return modified        
