@@ -55,7 +55,6 @@ curves: list[BezieCurve2] = []
 for perm in itertools.permutations(points):
     curves.append(BezieCurve2(list(perm)))
 
-
 def draw_bcurve(surf: pygame.Surface, crv: BezieCurve2, pointclr=(0,0,255), lineclr=(255,0,0), width=2):
     for p in crv.points:
         pygame.draw.circle(surf, pointclr, uv2xy(coord2uv(p)), 4)
