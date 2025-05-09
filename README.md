@@ -25,6 +25,7 @@ Suggestion: If you change `MAX_ENDPIXEL_DEVIATION` with some multiple `k` (for e
 When the `CURVE_COUNT_PER_10x10` is relatively small and/or `MAX_ENDPIXEL_DEVIATION` is small as well (resulting in less average length of curve), some parts of the image may stay blank causing effect like in these images:
 - [this image](examples/карим_out_1.jpg)
 - [this image](examples/джарик_out_2.jpg)
+
 Based on your goals, you may like to include those artifacts to achive the effect of real paint drawing like in:
 - [this image](examples/не%20рыпаемся_out_3.jpg)
 - [this image](examples/пейзаж_out_1.jpg)
